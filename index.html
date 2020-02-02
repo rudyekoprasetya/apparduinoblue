@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!--  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<!-- Path to Framework7 Library CSS, Material Theme -->
+ <link rel="stylesheet" href="css/framework7.material.min.css">
+<!-- Path to Framework7 color related styles, Material Theme -->
+ <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+<!--  fonts Awesome -->
+ <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+<!-- Path to your custom app styles-->
+<link rel="stylesheet" href="css/my-app.css">
+        <title>Arduino</title>
+    </head>
+    <body>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages navbar-fixed">            
+            <div class="page" data-page="index">
+<!-- untuk menu atas -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only open-panel">
+                        <i class="icon icon-bars"></i>
+                    </a>
+                </div>
+                <div class="center">
+                    Arduino Remote
+                </div>
+                <div class="right">
+                    <a href="#" class="link icon-only">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    <!-- untuk menu atas -->
+
+    <!-- isi -->
+    <div class="page-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="#" class="item-link smart-select">
+                    <!-- select -->
+                    <select name="devices" id="devices">
+                      <option>Pilihan</option>
+                    </select>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <!-- Select label -->
+                        <div class="item-title">Pilih Devices</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div> 
+        <div class="content-block">        
+            <p class="buttons-rows">
+                <a href="#" id="koneksi_bt" class="button button-fill button-raised color-blue">Koneksikan</a></p>
+            </p>
+            <div class="row">
+              <div class="col-50">
+                <a href="#" class="button button-raised button-fill button-big color-green" id="nyala">Nyala</a>
+              </div>
+              <div class="col-50">
+                <a href="#" class="button button-raised button-fill button-big color-red" id="mati">Mati</a>
+               </div> 
+            </div>                               
+            <p class="buttons-rows">
+                <a href="#" id="putuskan_bt" class="button button-fill button-raised color-black">Putuskan</a></p>
+            </p>   
+        </div>
+    </div>
+    <!-- isi -->
+
+            </div>
+        </div>
+    </div>
+</div>
+        
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
